@@ -1,49 +1,266 @@
+:root
+
 *{
-  margin: 0;padding: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  background: cyan;
 }
 
-
-h1{
-  font-size:2rem!important;
-  text-align: center;
-  align-items: center;
-  padding-top: 30px;
-  margin-top: 30px;
-  background-color: red;
-  color: black;
-
-}
-
-.parent  {
-color: green;
-display: flex;
-padding-left: 5% ;
-font-size: 2rem;
-background-color: antiquewhite;
-margin: 10px;
-padding-top: 20px;
-flex-wrap: nowrap;
-align-items: center;
-position: relative;
-flex-direction: row-reverse;
-
-}
-
-.parent > div{
-  background-color: orange;
-  margin: 10px;
+.container{
   width: 80%;
-  height: 80%;
+  margin: auto;
+}
+
+
+.btn{
+  background-color: orange;
+  padding: 8px 16px;
+  border-radius: 5px;
   border: 2px solid black;
-  text-align: center;
+
 }
 
-.parent > div:nth-child(even){
+
+
+.global {
+  background: rgba(255, 119, 0 , 0.432);
+}
+
+.global > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: black;
+}
+
+.w {
+  font-size: x-large;
+  color: red;
+  box-shadow: 5px black;
+}
+
+.icons {
+  font-size: medium;
+  justify-content: space-around;
+  margin-left: 16px;
+
+}
+
+header {
   background: blue;
+}
+
+header > div{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  color: white;
+  background: blue;
+}
+
+header ul{
+  display: flex;
 
 }
-.item-1{
-  order: 1;
+
+header ul li {
+  list-style: none;
+  margin-left: 16px ;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+header ul li:hover {
+  cursor: pointer;
+  background: red;
+  transform: scale(1.5);
+
+
+}
+
+.logo{
+  width: 80px;
+  height: 80px;
+  background: white;
+  color: blue;
+  border-radius: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo div{
+  border: 3px solid black;
+}
+
+
+/* =========hero  */
+
+.hero{
+  background: url(https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?q=10&h=200) no-repeat center center;
+  background-size: cover;
+  color: aliceblue;
+  text-align:center;
+  justify-content: center;
+  min-height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero-content{
+  background: rgba(0, 0, 0, 0.788);
+  color: white;
+  width: 500px;
+
+  padding: 32px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.hero-content hr{
+  width: 100%;
+
+
+}
+
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+}
+
+.articles{
+  width: 66%;
+}
+
+.title{
+  font-size: 20px;
+  color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.title p{
+  color: green;
+}
+article{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  box-shadow: -5px 5px 10px green;
+  padding: 20px 16px ;
+  border-radius: 10px;
+
+}
+
+.art-img{
+  width: 250px;
+}
+
+article i {
+   margin-top: 10px;
+   padding: 10px;
+}
+
+article .btn {
+  float: right;
+}
+
+
+
+.side-links{
+  background: rgba(235, 237, 64, 0.771);
+  width: 34%;
+  border: 2px solid black;
+}
+
+
+.country{
+  background-color: antiquewhite;
+  padding: 16px;
+  border-radius: 5px;
+  margin-bottom: 32px;
+}
+
+.date{
+  background-color: aqua;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+
+
+/* ===== reccc */
+
+
+.recc{
+  background-color: orangered;
+  margin-top: 64px;
+  padding: 46px 0;
+}
+
+.card-list{
+  margin-top: 24px;
+  margin-left: 54px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+
+}
+
+.card{
+  width: 350px;
+  box-shadow: -5px 5px 10px green;
+  border-radius: 20px;
+
+}
+
+.card img{
+  border-radius: 20px 20px 0 0;
+
+}
+
+.card .btn {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  float: right;
+}
+
+
+/* ======subsscribe */
+
+
+.subs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px ;
+}
+.subs input {
+  line-height: 42px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  margin-right: 16px;
+}
+
+/* =======footer */
+
+
+.footer{
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  padding: 50px;
+  margin-top: 16px;
 }
